@@ -44,7 +44,7 @@ export const Navbar = ({
             </svg>
           </button>
           <ul
-            className={`menu menu-sm dropdown-content rounded z-[1] mt-5 w-[23rem] p-2 shadow ${
+            className={`menu menu-sm dropdown-content rounded z-[1] mt-5 w-[24rem] p-2 shadow ${
               theme === "light"
                 ? "bg-white shadow-lg"
                 : "bg-slate-800 shadow-lg"

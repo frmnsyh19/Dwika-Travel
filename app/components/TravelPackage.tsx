@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+
+import React, { useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
@@ -7,7 +9,17 @@ import "swiper/css/pagination";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { HiUserGroup } from "react-icons/hi";
 import { FaPlaneDeparture } from "react-icons/fa6";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 export const TravelPackage = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: "ease-in-out",
+      once: false,
+    });
+  }, []);
   return (
     <>
       <div className=" w-full flex flex-col gap-3">
@@ -32,7 +44,9 @@ export const TravelPackage = () => {
               1024: { slidesPerView: 4 }, // Untuk layar lg (≥1024px)
             }}>
             <SwiperSlide className="">
-              <div className=" w-48 h-[24rem] lg:h-[26rem]  lg:w-[17rem] justify-between rounded flex shadow-lg flex-col gap-1 p-1">
+              <div
+                data-aos="fade-down"
+                className=" w-48 h-[24rem] lg:h-[26rem]  lg:w-[17rem] justify-between rounded flex shadow-lg flex-col gap-1 p-1">
                 <img
                   src="/explore/pinklombok.jpg"
                   alt="Slide 1"
@@ -61,7 +75,9 @@ export const TravelPackage = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide className="">
-              <div className=" w-48 h-[24rem] lg:h-[26rem]  lg:w-[17rem] justify-between rounded flex shadow-lg flex-col gap-1 p-1">
+              <div
+                data-aos="fade-down"
+                className=" w-48 h-[24rem] lg:h-[26rem]  lg:w-[17rem] justify-between rounded flex shadow-lg flex-col gap-1 p-1">
                 <img
                   src="/explore/singapore.jpg"
                   alt="Slide 1"
@@ -92,7 +108,9 @@ export const TravelPackage = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide className="">
-              <div className=" w-48 h-[24rem] lg:h-[26rem]  lg:w-[17rem] justify-between rounded flex shadow-lg flex-col gap-1 p-1">
+              <div
+                data-aos="fade-down"
+                className=" w-48 h-[24rem] lg:h-[26rem]  lg:w-[17rem] justify-between rounded flex shadow-lg flex-col gap-1 p-1">
                 <img
                   src="/explore/tokyo.jpg"
                   alt="Slide 1"
@@ -121,7 +139,9 @@ export const TravelPackage = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide className="">
-              <div className=" w-48 h-[24rem] lg:h-[26rem]  lg:w-[17rem] justify-between rounded flex shadow-lg flex-col gap-1 p-1">
+              <div
+                data-aos="fade-down"
+                className=" w-48 h-[24rem] lg:h-[26rem]  lg:w-[17rem] justify-between rounded flex shadow-lg flex-col gap-1 p-1">
                 <img
                   src="/explore/pinklombok.jpg"
                   alt="Slide 1"

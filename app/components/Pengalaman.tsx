@@ -1,13 +1,24 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
 import { Stat } from "./ui/Stat";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 export const Pengalaman = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: "ease-in-out",
+      once: true,
+    });
+  }, []);
   return (
     <>
-      <div className=" w-full flex lg:h-screen  justify-center items-center gap-1 lg:flex-row flex-col">
-        <div className=" w-full lg:w-1/2 flex flex-col gap-2">
-          <p className=" text-5xl lg:text-6xl font-bold">
-            Our Expertise In Travel🌎
+      <div className=" w-full flex lg:h-screen lg:p-3 justify-center items-center gap-4 lg:flex-row flex-col">
+        <div
+          data-aos="zoom-in"
+          className=" w-full lg:w-[60%] lg:p-3  flex flex-col gap-2">
+          <p className=" text-4xl lg:text-6xl font-bold">
+            Our Expertise In Travel 🌎
           </p>
           <p className=" text-sm capitalize ms-1 leading-7">
             We understand that every journey is a valuable experience. With
@@ -20,7 +31,7 @@ export const Pengalaman = () => {
           </p>
           <Stat />
         </div>
-        <div className=" w-full lg:w-2/5 mt-40 lg:mt-0 justify-end  flex gap-1">
+        <div className=" w-full lg:w-1/3 lg:p-3 ml-2 mt-40 lg:mt-0 justify-end  flex gap-1">
           <div className="relative flex justify-center items-center w-full ">
             {/* Mask / Squircle Background */}
             <div className="mask bg-slate-800 mask-squircle w-full h-80 lg:h-[20rem] z-10"></div>

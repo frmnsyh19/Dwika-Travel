@@ -1,11 +1,23 @@
-import React from "react";
+"use client";
+
+import React, { useEffect } from "react";
 import { Rating } from "./Rating";
 import { Avatar } from "./Avatar";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 export const CardReaction = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: "ease-in-out",
+      once: false,
+    });
+  }, []);
   return (
     <>
-      <div className=" w-full lg:w-80 hover:bg-blue-400 hover:text-white rounded-2xl gap-2 p-2 flex flex-col justify-center items-center shadow-lg">
+      <div
+        data-aos="zoom-out-down"
+        className=" w-full lg:w-80 hover:bg-blue-400 hover:text-white rounded-2xl gap-2 p-2 flex flex-col justify-center items-center shadow-lg">
         <div className=" w-full h-60 flex p-1 bg-white flex-col gap-5 shadow rounded-2xl">
           <div className=" w-full flex h-full flex-col p-5 gap-2 justify-center">
             <Rating />
@@ -22,7 +34,9 @@ export const CardReaction = () => {
           <p className=" text-base">Firmansyah</p>
         </div>
       </div>
-      <div className=" w-full lg:w-80 hover:bg-blue-400 hover:text-white rounded-2xl gap-2 p-2 flex flex-col justify-center items-center shadow-lg">
+      <div
+        data-aos="zoom-out-down"
+        className=" w-full lg:w-80 hover:bg-blue-400 hover:text-white rounded-2xl gap-2 p-2 flex flex-col justify-center items-center shadow-lg">
         <div className=" w-full h-60 flex p-1 bg-white flex-col gap-5 shadow rounded-2xl">
           <div className=" w-full flex h-full flex-col p-5 gap-2 justify-center">
             <Rating />
@@ -39,7 +53,9 @@ export const CardReaction = () => {
           <p className=" text-base">Firmansyah</p>
         </div>
       </div>
-      <div className=" w-full lg:w-80 hover:bg-blue-400 hover:text-white rounded-2xl gap-2 p-2 flex flex-col justify-center items-center shadow-lg">
+      <div
+        data-aos="zoom-out-down"
+        className=" w-full lg:w-80 hover:bg-blue-400 hover:text-white rounded-2xl gap-2 p-2 flex flex-col justify-center items-center shadow-lg">
         <div className=" w-full h-60 flex p-1 bg-white flex-col gap-5 shadow rounded-2xl">
           <div className=" w-full flex h-full flex-col p-5 gap-2 justify-center">
             <Rating />
@@ -56,7 +72,9 @@ export const CardReaction = () => {
           <p className=" text-base">Firmansyah</p>
         </div>
       </div>
-      <div className=" w-full lg:w-80 hover:bg-blue-400 hover:text-white rounded-2xl gap-2 p-2 flex flex-col justify-center items-center shadow-lg">
+      <div
+        data-aos="zoom-out-down"
+        className=" w-full lg:w-80 hover:bg-blue-400 hover:text-white rounded-2xl gap-2 p-2 flex flex-col justify-center items-center shadow-lg">
         <div className=" w-full h-60 flex p-1 bg-white flex-col gap-5 shadow rounded-2xl">
           <div className=" w-full flex h-full flex-col p-5 gap-2 justify-center">
             <Rating />

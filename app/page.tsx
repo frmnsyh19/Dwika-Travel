@@ -13,12 +13,12 @@ export default function Home() {
 
   return (
     <div
-      className="flex w-full flex-col justify-center items-center "
+      className="flex w-full flex-col justify-center items-center  "
       data-theme={theme}>
       <div className="w-full shadow-xl flex justify-center items-center">
         <Navbar setThemes={setTheme} />
       </div>
-      <div className=" w-full lg:w-11/12 gap-12 flex flex-col p-1 lg:p-2">
+      <div className=" w-full lg:w-11/12 gap-12 flex flex-col p-2">
         <Header />
         <Explore />
         <Pengalaman />

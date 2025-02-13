@@ -10,12 +10,12 @@ export const Explore = () => {
     AOS.init({
       duration: 1000,
       easing: "ease-in-out",
-      once: true,
+      once: false,
     });
   }, []);
 
   return (
-    <div className=" w-full flex justify-center items-center">
+    <div className=" w-full p-2 flex justify-center items-center">
       <div className=" flex justify-center items-center flex-col gap-5">
         <div className=" flex justify-center items-center flex-col gap-2">
           <p className=" text-3xl font-bold">Explore Best Destination</p>

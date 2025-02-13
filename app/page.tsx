@@ -18,7 +18,7 @@ export default function Home() {
       <div className="w-full shadow-xl flex justify-center items-center">
         <Navbar setThemes={setTheme} />
       </div>
-      <div className=" w-full lg:w-11/12 gap-12 flex flex-col p-2">
+      <div className=" w-full lg:w-11/12 gap-12 flex flex-col p-1">
         <Header />
         <Explore />
         <Pengalaman />

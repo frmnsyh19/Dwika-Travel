@@ -13,14 +13,14 @@ export const Pengalaman = () => {
   }, []);
   return (
     <>
-      <div className=" w-full flex lg:h-screen lg:p-3 justify-center items-center gap-4 lg:flex-row flex-col">
+      <div className=" w-full p-2 flex lg:h-screen lg:p-3 justify-center items-center gap-4 lg:flex-row flex-col">
         <div
           data-aos="zoom-in"
           className=" w-full lg:w-[60%] lg:p-3  flex flex-col gap-2">
-          <p className=" text-4xl lg:text-6xl font-bold">
+          <p className=" text-5xl lg:text-6xl font-bold">
             Our Expertise In Travel 🌎
           </p>
-          <p className=" text-sm capitalize ms-1 leading-7">
+          <p className="leading-8 text-justify text-sm capitalize ms-1 leading-7">
             We understand that every journey is a valuable experience. With
             expertise and dedication, we are ready to provide the best service
             to ensure your trip is comfortable, safe, and unforgettable. From

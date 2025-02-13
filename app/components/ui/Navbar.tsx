@@ -44,39 +44,39 @@ export const Navbar = ({
             </svg>
           </button>
           <ul
-            className={`menu menu-sm dropdown-content rounded z-[1] mt-5 w-[24rem] p-2 shadow ${
+            className={`menu menu-sm dropdown-content rounded-box z-[1] mt-5 w-[25rem] ml-1 p-2 shadow ${
               theme === "light"
                 ? "bg-white shadow-lg"
                 : "bg-slate-800 shadow-lg"
             }`}>
-            <li className=" p-1">
+            <li className=" w-full p-2 flex justify-center items-center">
               <Link href={"/"} className="text-lg">
                 Home
               </Link>
             </li>
-            <li className="p-1">
+            <li className="p-2 ml-2 flex justify-center items-center">
               <details>
-                <summary>
-                  <span className=" text-lg">Paket Wisata</span>
+                <summary className="">
+                  <span className=" text-lg">Travel Package</span>
                 </summary>
-                <ul className="p-2">
-                  <li>
-                    <a className=" text-lg">Demostik</a>
+                <ul className=" p-2 flex-col">
+                  <li className="p-2 flex justify-center items-center mr-3">
+                    <a className=" text-lg text-center">Demostik</a>
                   </li>
-                  <li>
-                    <a className=" text-lg">Internasional</a>
+                  <li className="p-2 flex justify-center items-center">
+                    <a className=" text-lg text-center">Internasional</a>
                   </li>
                 </ul>
               </details>
             </li>
-            <li className="p-1">
+            <li className="p-2 flex justify-center items-center">
               <a className="text-lg ">Gallery</a>
             </li>
-            <li className="p-1">
+            <li className="p-2 flex justify-center items-center">
               <a className="text-lg ">Artikel</a>
             </li>
-            <li className="p-1">
-              <a className="text-lg ">Kontak</a>
+            <li className="p-2 flex justify-center items-center">
+              <a className="text-lg ">Contact</a>
             </li>
             <button className=" btn bg-green-300 border-none text-white w-full">
               Chat Me
@@ -84,13 +84,6 @@ export const Navbar = ({
           </ul>
         </div>
         <div className=" lg:navbar-start navbar-center">
-          {/* <Image
-            width={105}
-            className=" lg:block hidden"
-            src={"/logo.png"}
-            alt="logo"
-            height={105}
-          /> */}
           <img src="/logo.png" className=" w-28 lg:w-32 lg:mb-0 mb-2" alt="" />
         </div>
       </div>
@@ -137,15 +130,15 @@ export const Navbar = ({
         </ul>
       </div>
 
-      <div className="navbar-end flex gap-1">
+      <div className="navbar-end flex gap-1 p-2">
         <a className="btn bg-green-300 text-white lg:flex hidden">Chat Me</a>
         <button
-          className={`btn btn-md shadow-lg`}
+          className={`btn btn-md shadow`}
           onClick={() => setTheme(theme === "light" ? "dark" : "light")}>
           {theme === "light" ? (
             <LuMoon className=" text-xl" />
           ) : (
-            <FaSun className=" text-lg text-orange-500" />
+            <FaSun className=" text-lg text-yellow-300" />
           )}
         </button>
       </div>

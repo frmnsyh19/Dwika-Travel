@@ -6,7 +6,7 @@ export const PaketWisataInternasional = () => {
   return (
     <div className="flex w-full flex-col items-center justify-center p-1">
       <div className="flex h-full w-full flex-col items-center justify-center gap-1 lg:w-[80%]">
-        <p className="text-3xl font-bold text-center">
+        <p className="text-2xl font-bold text-center">
           Paket Wisata Internasional
         </p>
         <p className="text-center text-base">

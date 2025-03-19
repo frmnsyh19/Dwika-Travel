@@ -8,7 +8,7 @@ export const PaketWisata = () => {
       <div className="flex h-full w-full flex-col items-center justify-center gap-1 lg:w-[80%]">
         <p className="text-3xl font-bold">Paket Wisata Domestik</p>
         <p className="text-center text-base">
-          Jelajahi keindahan Indonesia dengan paket wisata domestik!✨, Kami
+          Jelajahi keindahan Indonesia dengan paket wisata domestik!, Kami
           menawarkan perjalanan seru ke berbagai destinasi eksotis,
         </p>
       </div>

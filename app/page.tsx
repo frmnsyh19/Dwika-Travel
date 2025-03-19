@@ -8,6 +8,7 @@ import { Footer } from "./components/ui/Footer";
 import { Why } from "./components/Why";
 import { PaketWisata } from "./components/PaketWisata";
 import { Whatsapp } from "./components/ui/Whatsapp";
+import { PaketWisataInternasional } from "./components/PaketWisataInternasional";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
         {/* <Pengalaman /> */}
         {/* <TravelPackage /> */}
         <PaketWisata />
+        <PaketWisataInternasional />
         <Reaction />
       </div>
       <Footer />

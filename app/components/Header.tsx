@@ -12,8 +12,10 @@ export const Header = () => {
     });
   }, []);
   return (
-    <div data-aos="zoom-out-down" className=" w-full h-[18rem] lg:h-[30rem]">
-      <img src="/headerbg.jpg" className=" w-full h-full rounded-lg" alt="" />
+    <div
+      data-aos="zoom-out-down"
+      className=" mt-16 lg:mt-20 h-[13rem] w-full lg:h-[30rem]">
+      <img src="/spanduk.jpg" className="h-full w-full rounded-lg" alt="" />
     </div>
   );
 };

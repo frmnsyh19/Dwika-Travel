@@ -15,63 +15,63 @@ export const Explore = () => {
   }, []);
 
   return (
-    <div className=" w-full p-2 flex justify-center items-center">
-      <div className=" flex justify-center items-center flex-col gap-5">
-        <div className=" flex justify-center items-center flex-col gap-2">
-          <p className=" text-3xl font-bold">Explore Best Destination</p>
-          <p className=" text-base text-center">
-            Make your vacation dreams come true by visiting amazing places. With
-            us, every destination is possible!
+    <div className=" mt-8 lg:mt-10 flex w-full items-center justify-center p-1 lg:h-screen">
+      <div className="flex flex-col items-center justify-center gap-5">
+        <div className="flex flex-col items-center justify-center gap-2">
+          <p className="text-3xl font-bold">Explore Best Destination</p>
+          <p className="text-center text-base capitalize leading-7">
+            Wujudkan impian liburan Anda dengan mengunjungi tempat-tempat
+            menakjubkan. Bersama kami, setiap destinasi bisa menjadi kenyataan!
           </p>
         </div>
-        <div className=" flex lg:flex-row flex-col p-2 justify-start gap-5">
+        <div className="flex flex-col justify-start gap-5 p-2 lg:flex-row">
           <div
             data-aos="fade-up"
-            className=" gap-2 rounded-lg w-full lg:w-[18rem] flex flex-col">
+            className="flex w-[25rem] flex-col gap-2 rounded-lg p-3 shadow lg:w-[18rem]">
             <img
               src="/explore/pinklombok.jpg"
-              className=" w-full h-96  rounded-lg"
+              className="h-96 w-full rounded-lg"
               alt=""
             />
-            <div className=" flex flex-col gap-1 ">
-              <p className=" text-base font-bold">Pantai Pink Lombok</p>
-              <div className=" flex gap-1 items-center">
-                <FaLocationDot className=" text-sm" />
-                <p className=" text-sm font-light">Lombok Indonesia</p>
+            <div className="flex flex-col gap-1">
+              <p className="text-lg font-bold capitalize">Pantai Pink Lombok</p>
+              <div className="flex items-center gap-1">
+                <FaLocationDot />
+                <p className="text-base font-light">Lombok Indonesia</p>
               </div>
             </div>
           </div>
           <div
             data-aos="fade-up"
-            className=" rounded-lg w-full lg:w-[18rem] flex flex-col gap-2">
+            className="flex w-full flex-col gap-2 rounded-lg p-3 shadow lg:w-[18rem]">
             <img
               src="/explore/tokyo.jpg"
-              className=" w-full h-96  rounded-lg"
+              className="h-96 w-full rounded-lg"
               alt=""
             />
-            <div className=" flex flex-col gap-1">
-              <p className=" text-base font-bold">Tokyo</p>
-              <div className=" flex gap-1 items-center">
-                <FaLocationDot className=" text-sm" />
-                <p className=" text-sm font-light">Jepang</p>
+            <div className="flex flex-col gap-1">
+              <p className="text-lg font-bold capitalize">Tokyo</p>
+              <div className="flex items-center gap-1">
+                <FaLocationDot />
+                <p className="text-base font-light">Jepang</p>
               </div>
             </div>
           </div>
           <div
             data-aos="fade-up"
-            className=" rounded-lg w-full lg:w-[18rem] flex flex-col gap-2">
+            className="flex w-full flex-col gap-2 rounded-lg p-3 shadow lg:w-[18rem]">
             <img
               src="/explore/singapore.jpg"
-              className=" w-full h-96  rounded-lg"
+              className="h-96 w-full rounded-lg"
               alt=""
             />
-            <div className=" flex flex-col gap-1">
-              <p className=" text-base font-bold">
-                universal studios singapore
+            <div className="flex flex-col gap-1">
+              <p className="text-lg font-bold capitalize">
+                universal studios singapure{" "}
               </p>
-              <div className=" flex gap-1 items-center">
-                <FaLocationDot className=" text-sm" />
-                <p className=" text-sm font-light">Singapura</p>
+              <div className="flex items-center gap-1">
+                <FaLocationDot />
+                <p className="text-base font-light">Singapura</p>
               </div>
             </div>
           </div>

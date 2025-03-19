@@ -1,146 +1,73 @@
 "use client";
-import React, { useEffect, useState } from "react";
-import { LuMoon } from "react-icons/lu";
-import { FaSun } from "react-icons/fa";
-import Link from "next/link";
+import React from "react";
+import { Dawer } from "./Dawer";
 
-export const Navbar = ({
-  setThemes,
-}: {
-  setThemes: (theme: string) => void;
-}) => {
-  const [theme, setTheme] = useState<string>("light");
-
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      const savedTheme = localStorage.getItem("theme") || "light";
-      setTheme(savedTheme);
-    }
-  }, []);
-
-  useEffect(() => {
-    document.documentElement.setAttribute("data-theme", theme);
-    localStorage.setItem("theme", theme);
-    setThemes(theme);
-  }, [theme, setThemes]);
-
+export const Navbar = () => {
   return (
-    <div className="navbar w-full flex lg:justify-start justify-between lg:w-11/12">
-      <div className="navbar-start">
-        <div className="dropdown">
-          <button tabIndex={0} className="btn btn-ghost lg:hidden">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor">
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h8m-8 6h16"
-              />
-            </svg>
-          </button>
-          <ul
-            className={`menu menu-sm dropdown-content rounded-box z-[1] mt-5 w-[24rem] ml-1 p-2 shadow ${
-              theme === "light"
-                ? "bg-white shadow-lg"
-                : "bg-slate-800 shadow-lg"
-            }`}>
-            <li className=" w-full p-2 flex justify-center items-center">
-              <Link href={"/"} className="text-lg">
-                Home
-              </Link>
-            </li>
-            <li className="p-2 ml-2 flex justify-center items-center">
-              <details>
-                <summary className="">
-                  <span className=" text-lg">Travel Package</span>
-                </summary>
-                <ul className=" p-2 flex-col">
-                  <li className="p-2 flex justify-center items-center mr-3">
-                    <a className=" text-lg text-center">Demostik</a>
-                  </li>
-                  <li className="p-2 flex justify-center items-center">
-                    <a className=" text-lg text-center">Internasional</a>
-                  </li>
-                </ul>
-              </details>
-            </li>
-            <li className="p-2 flex justify-center items-center">
-              <a className="text-lg ">Gallery</a>
-            </li>
-            <li className="p-2 flex justify-center items-center">
-              <a className="text-lg ">Artikel</a>
-            </li>
-            <li className="p-2 flex justify-center items-center">
-              <a className="text-lg ">Contact</a>
-            </li>
-            <button className=" btn bg-green-300 border-none text-white w-full">
+    <div className="bg-base-100 fixed left-0 top-0 z-50 flex w-full items-center justify-center shadow-md">
+      <div className="w-full lg:w-[90%]">
+        <div className="navbar bg-base-100">
+          <div className="navbar-start">
+            <Dawer />
+            <a className="btn btn-ghost ms-10 text-xl lg:ms-0">
+              <img src="/logo.png" className="w-16" alt="" />
+            </a>
+          </div>
+          <div className="navbar-center hidden lg:flex">
+            <ul className="menu menu-horizontal px-1">
+              <li className="p-1">
+                <a href="" className=" text-neutral text-lg">
+                  Home
+                </a>
+              </li>
+              <li className="p-1">
+                <a className="text-neutral text-lg" href="/tentangkami">
+                  Tentang Kami
+                </a>
+              </li>
+              <li className="p-1">
+                <details>
+                  <summary className="text-neutral text-lg">
+                    Paket Wisata
+                  </summary>
+                  <ul className="w-48 bg-white p-1">
+                    <li>
+                      <a href="" className="text-base capitalize">
+                        Demostik
+                      </a>
+                    </li>
+                    <li>
+                      <a href="" className="text-base capitalize">
+                        Internasional
+                      </a>
+                    </li>
+                  </ul>
+                </details>
+              </li>
+              <li className="p-1">
+                <a className="text-neutral text-lg" href="/gallery">
+                  Gallery
+                </a>
+              </li>
+              <li className="p-1">
+                <a className="text-neutral text-lg" href="/artikels">
+                  Artikel
+                </a>
+              </li>
+              <li className="p-1">
+                <a className="text-neutral text-lg" href="/kontak">
+                  Kontak
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div className="navbar-end">
+            <a className="btn bg-green-400 text-lg text-white">
+              <i className="fa-brands fa-whatsapp fa-lg"></i>
               Chat Me
-            </button>
-          </ul>
+            </a>
+          </div>
         </div>
-        <div className=" lg:navbar-start navbar-center">
-          <img src="/logo.png" className=" w-28 lg:w-32 lg:mb-0 mb-2" alt="" />
-        </div>
-      </div>
-
-      <div className="navbar-center lg:flex hidden">
-        {/* <Image
-          width={130}
-          className="lg:hidden block"
-          src={"/logo.png"}
-          alt="logo"
-          hidden
-        /> */}
-
-        <ul className="menu menu-horizontal px-1 ">
-          <li className=" p-1">
-            <Link href={"/"} className="text-lg">
-              Home
-            </Link>
-          </li>
-          <li className="p-1">
-            <details>
-              <summary>
-                <span className=" text-lg">Paket Wisata</span>
-              </summary>
-              <ul className="p-2">
-                <li>
-                  <a className=" text-lg">Demostik</a>
-                </li>
-                <li>
-                  <a className=" text-lg">Internasional</a>
-                </li>
-              </ul>
-            </details>
-          </li>
-          <li className="p-1">
-            <a className="text-lg ">Gallery</a>
-          </li>
-          <li className="p-1">
-            <a className="text-lg ">Artikel</a>
-          </li>
-          <li className="p-1">
-            <a className="text-lg ">Kontak</a>
-          </li>
-        </ul>
-      </div>
-
-      <div className="navbar-end flex gap-1 p-2">
-        <a className="btn bg-green-300 text-white lg:flex hidden">Chat Me</a>
-        <button
-          className={`btn btn-md shadow`}
-          onClick={() => setTheme(theme === "light" ? "dark" : "light")}>
-          {theme === "light" ? (
-            <LuMoon className=" text-xl" />
-          ) : (
-            <FaSun className=" text-lg text-yellow-300" />
-          )}
-        </button>
       </div>
     </div>
   );

@@ -23,7 +23,7 @@ export const TravelPackage = () => {
   return (
     <>
       <div className=" w-full flex flex-col gap-6">
-        <div className=" flex flex-col gap- h-full justify-start2 justify-center items-center w-full">
+        <div className=" flex flex-col h-full justify-center items-center w-full">
           <p className=" text-3xl font-bold">Travel Package</p>
           <p className=" text-base text-center">
             Our tour packages are specifically designed to meet your needs, from

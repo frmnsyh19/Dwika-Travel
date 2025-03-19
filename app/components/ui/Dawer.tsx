@@ -21,12 +21,12 @@ export const Dawer = () => {
           </svg>
         </label>
       </div>
-      <div className="drawer-side ">
+      <div className="drawer-side z-50">
         <label
           htmlFor="my-drawer"
           aria-label="close sidebar"
           className="drawer-overlay"></label>
-        <ul className="menu bg-base-200 text-base-content min-h-full w-80 p-4">
+        <ul className="menu bg-base-200 z-50 text-base-content min-h-full w-80 p-4">
           <li className="p-1">
             <a href="" className=" text-neutral text-lg">
               Home

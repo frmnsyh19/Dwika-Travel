@@ -14,7 +14,7 @@ export const Header = () => {
   return (
     <div
       data-aos="zoom-out-down"
-      className=" mt-16 lg:mt-20 h-[13rem] w-full lg:h-[30rem]">
+      className=" mt-16 lg:mt-16 h-[13rem] w-full lg:h-[30rem]">
       <img src="/spanduk.jpg" className="h-full w-full rounded-lg" alt="" />
     </div>
   );

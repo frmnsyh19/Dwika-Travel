@@ -12,7 +12,7 @@ import { Whatsapp } from "./components/ui/Whatsapp";
 export default function Home() {
   return (
     <div
-      className="flex w-full flex-col justify-center items-center "
+      className="flex w-full flex-col overflow-y-hidden justify-center items-center "
       data-theme="light">
       <Whatsapp />
       <div className="w-full shadow-xl flex justify-center items-center">

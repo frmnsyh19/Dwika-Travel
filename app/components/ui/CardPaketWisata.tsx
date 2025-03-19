@@ -39,7 +39,7 @@ export const CardPaketWisata = () => {
       <div className="flex w-[20rem] flex-col rounded-lg shadow-xl">
         <div className="h-52 w-full">
           <img
-            src="/domestik/bromo.jpg"
+            src="/domestik/broomo.jpg"
             className="h-full w-full rounded"
             alt=""
           />

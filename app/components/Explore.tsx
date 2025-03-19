@@ -29,15 +29,15 @@ export const Explore = () => {
             data-aos="fade-up"
             className="flex flex-col gap-2 rounded-lg p-3 shadow w-[20rem] lg:w-[18rem]">
             <img
-              src="/explore/pinklombok.jpg"
+              src="/domestik/bali.jpg"
               className="h-96 w-full rounded-lg"
               alt=""
             />
             <div className="flex flex-col gap-1">
-              <p className="text-lg font-bold capitalize">Pantai Pink Lombok</p>
+              <p className="text-lg font-bold capitalize">Pulau Dewata</p>
               <div className="flex items-center gap-1">
                 <FaLocationDot />
-                <p className="text-base font-light">Lombok Indonesia</p>
+                <p className="text-base font-light">Bali</p>
               </div>
             </div>
           </div>
@@ -45,7 +45,7 @@ export const Explore = () => {
             data-aos="fade-up"
             className="flex w-full flex-col gap-2 rounded-lg p-3 shadow w-[20rem] lg:w-[18rem]">
             <img
-              src="/explore/tokyo.jpg"
+              src="/internasional/jepang.jpg"
               className="h-96 w-full rounded-lg"
               alt=""
             />
@@ -61,14 +61,12 @@ export const Explore = () => {
             data-aos="fade-up"
             className="flex w-full flex-col gap-2 rounded-lg p-3 shadow w-[20rem] lg:w-[18rem]">
             <img
-              src="/explore/singapore.jpg"
+              src="/internasional/singapur.jpg"
               className="h-96 w-full rounded-lg"
               alt=""
             />
             <div className="flex flex-col gap-1">
-              <p className="text-lg font-bold capitalize">
-                universal studios singapure{" "}
-              </p>
+              <p className="text-lg font-bold capitalize">Merlion Park</p>
               <div className="flex items-center gap-1">
                 <FaLocationDot />
                 <p className="text-base font-light">Singapura</p>

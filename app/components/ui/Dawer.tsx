@@ -2,7 +2,7 @@ import React from "react";
 
 export const Dawer = () => {
   return (
-    <div className="drawer absolute lg:hidden">
+    <div className="drawer lg:hidden">
       <input id="my-drawer" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content">
         <label htmlFor="my-drawer" className="btn btn-ghost drawer-button">
@@ -21,7 +21,7 @@ export const Dawer = () => {
           </svg>
         </label>
       </div>
-      <div className="drawer-side">
+      <div className="drawer-side ">
         <label
           htmlFor="my-drawer"
           aria-label="close sidebar"

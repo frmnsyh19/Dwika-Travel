@@ -27,7 +27,7 @@ export const Explore = () => {
         <div className="flex flex-col justify-start gap-5 p-2 lg:flex-row">
           <div
             data-aos="fade-up"
-            className="flex w-[25rem] flex-col gap-2 rounded-lg p-3 shadow lg:w-[18rem]">
+            className="flex flex-col gap-2 rounded-lg p-3 shadow w-[20rem] lg:w-[18rem]">
             <img
               src="/explore/pinklombok.jpg"
               className="h-96 w-full rounded-lg"
@@ -43,7 +43,7 @@ export const Explore = () => {
           </div>
           <div
             data-aos="fade-up"
-            className="flex w-full flex-col gap-2 rounded-lg p-3 shadow lg:w-[18rem]">
+            className="flex w-full flex-col gap-2 rounded-lg p-3 shadow w-[20rem] lg:w-[18rem]">
             <img
               src="/explore/tokyo.jpg"
               className="h-96 w-full rounded-lg"
@@ -59,7 +59,7 @@ export const Explore = () => {
           </div>
           <div
             data-aos="fade-up"
-            className="flex w-full flex-col gap-2 rounded-lg p-3 shadow lg:w-[18rem]">
+            className="flex w-full flex-col gap-2 rounded-lg p-3 shadow w-[20rem] lg:w-[18rem]">
             <img
               src="/explore/singapore.jpg"
               className="h-96 w-full rounded-lg"

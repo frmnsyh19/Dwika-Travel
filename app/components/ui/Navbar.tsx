@@ -4,12 +4,12 @@ import { Dawer } from "./Dawer";
 
 export const Navbar = () => {
   return (
-    <div className="bg-base-100 fixed left-0 top-0 z-50 flex w-full items-center justify-center shadow-md">
+    <div className="bg-base-100  fixed left-0 top-0 z-50 flex  w-full items-center justify-center shadow-md">
       <div className="w-full lg:w-[90%]">
         <div className="navbar bg-base-100 lg:p-0 p-1">
           <div className="navbar-start">
             <Dawer />
-            <a className="btn btn-ghost ms-10 text-xl lg:ms-0">
+            <a className="btn btn-ghost lg:block absolute left-11 text-xl lg:ms-0">
               <img src="/logo.png" className="w-16" alt="" />
             </a>
           </div>

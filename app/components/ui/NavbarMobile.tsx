@@ -4,7 +4,7 @@ import React from "react";
 
 export const NavbarMobile = () => {
   return (
-    <div className="navbar lg:hidden bg-base-100 shadow-sm">
+    <div className="navbar z-40 lg:hidden bg-base-100 shadow-sm fixed top-0 left-0">
       <div className="navbar-start">
         <Dawer />
       </div>

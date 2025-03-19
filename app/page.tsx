@@ -19,7 +19,7 @@ export default function Home() {
         <Navbar />
       </div>
       <Header />
-      <div className=" w-full lg:w-[90%] gap-12 flex flex-col p-1">
+      <div className=" w-full lg:w-[90%] gap-12 flex flex-col ">
         <Explore />
         <Why />
         {/* <Pengalaman /> */}

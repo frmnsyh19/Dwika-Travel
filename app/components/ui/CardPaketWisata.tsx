@@ -45,10 +45,10 @@ export const CardPaketWisata = () => {
           />
         </div>
         <div className="flex w-full flex-col gap-2 p-2">
-          <p className="text-base font-bold uppercase">Wisata Bandung</p>
+          <p className="text-base font-bold uppercase">Wisata Singapura</p>
           <div className="flex w-full items-center justify-between">
             <p className="text-base">Jadwal Kebarangatan</p>
-            <span className="">29 Mar 2025</span>
+            <span className="">20 April 2025</span>
           </div>
           <div className="flex w-full items-center justify-between">
             <p className="text-base">Kuota Tersedia</p>
@@ -78,7 +78,7 @@ export const CardPaketWisata = () => {
           />
         </div>
         <div className="flex w-full flex-col gap-2 p-2">
-          <p className="text-base font-bold uppercase">Wisata Bali</p>
+          <p className="text-base font-bold uppercase">Wisata Jepang</p>
           <div className="flex w-full items-center justify-between">
             <p className="text-base">Jadwal Kebarangatan</p>
             <span className="">5 Jun 2025</span>

@@ -4,6 +4,7 @@ import React, { useEffect } from "react";
 import { Rating } from "./Rating";
 import { Avatar } from "./Avatar";
 import AOS from "aos";
+import { FaRegUserCircle } from "react-icons/fa";
 import "aos/dist/aos.css";
 export const CardReaction = () => {
   useEffect(() => {
@@ -28,7 +29,7 @@ export const CardReaction = () => {
           </div>
         </div>
         <div className=" w-full flex h-14 p-5 bg-none justify-start items-center gap-2">
-          <Avatar />
+          <FaRegUserCircle className="text-xl" />
           <p className=" text-base">Ibu Hamza</p>
         </div>
       </div>
@@ -45,7 +46,7 @@ export const CardReaction = () => {
           </div>
         </div>
         <div className=" w-full flex h-14 p-5 bg-none justify-start items-center gap-2">
-          <Avatar />
+          <FaRegUserCircle className="text-xl" />
           <p className=" text-base">Pak Sobri</p>
         </div>
       </div>
@@ -62,7 +63,7 @@ export const CardReaction = () => {
           </div>
         </div>
         <div className=" w-full flex h-14 p-5 bg-none justify-start items-center gap-2">
-          <Avatar />
+          <FaRegUserCircle className="text-xl" />
           <p className=" text-base">Firmansyah</p>
         </div>
       </div>
@@ -79,7 +80,7 @@ export const CardReaction = () => {
           </div>
         </div>
         <div className=" w-full flex h-14 p-5 bg-none justify-start items-center gap-2">
-          <Avatar />
+          <FaRegUserCircle className="text-xl" />
           <p className=" text-base">Putri</p>
         </div>
       </div>

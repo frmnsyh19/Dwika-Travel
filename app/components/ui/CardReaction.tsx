@@ -2,7 +2,7 @@
 
 import React, { useEffect } from "react";
 import { Rating } from "./Rating";
-import { Avatar } from "./Avatar";
+
 import AOS from "aos";
 import { FaRegUserCircle } from "react-icons/fa";
 import "aos/dist/aos.css";
